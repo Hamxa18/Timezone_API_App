@@ -21,6 +21,8 @@ public partial class _Default : System.Web.UI.Page
         {
 
             // if textbox id is null then it will consume first url if not it will consume second url
+            // please replace the localhost: port number with yours
+            // To check your port number run Web api project separately 
 
             string uri = txtId.Text.Trim() == "" ? "http://localhost:59761/api/Weather" : ("http://localhost:59761/api/Weather/" + txtId.Text.Trim());
              
